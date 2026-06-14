@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Study Notes | Imoria Learning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,12 +13,7 @@
 <header class="site-header">
     <div class="header-container">
         <a href="index.html" class="logo">
-            <svg class="logo-orbit" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="16" cy="16" r="3" fill="#FF6B4A"/>
-                <ellipse cx="16" cy="16" rx="14" ry="6" stroke="#F7F4ED" stroke-width="1.5" fill="none" transform="rotate(30 16 16)"/>
-                <ellipse cx="16" cy="16" rx="14" ry="6" stroke="#F7F4ED" stroke-width="1.5" fill="none" transform="rotate(-30 16 16)" opacity="0.5"/>
-                <circle cx="28" cy="13" r="2" fill="#E8C547"/>
-            </svg>
+            <span class="logo-icon">🩺</span>
             <span class="logo-text">Imoria Learning</span>
         </a>
         <nav class="main-nav">
@@ -35,19 +32,19 @@
     <aside class="notes-sidebar">
         <h3>Chapters</h3>
         <ul>
-            <li><a href="#chapter-1"><span class="sidebar-check" id="sidebar-check-1"></span>1. Discovery of Electron, Proton & Neutron</a></li>
-            <li><a href="#chapter-2"><span class="sidebar-check" id="sidebar-check-2"></span>2. Cathode Rays & Canal Rays</a></li>
-            <li><a href="#chapter-3"><span class="sidebar-check" id="sidebar-check-3"></span>3. Chadwick's Experiment</a></li>
-            <li><a href="#chapter-4"><span class="sidebar-check" id="sidebar-check-4"></span>4. Rutherford's Atomic Model</a></li>
-            <li><a href="#chapter-5"><span class="sidebar-check" id="sidebar-check-5"></span>5. Bohr's Atomic Theory</a></li>
-            <li><a href="#chapter-6"><span class="sidebar-check" id="sidebar-check-6"></span>6. Planck's Quantum Theory</a></li>
-            <li><a href="#chapter-7"><span class="sidebar-check" id="sidebar-check-7"></span>7. X-Rays & Moseley's Law</a></li>
-            <li><a href="#chapter-8"><span class="sidebar-check" id="sidebar-check-8"></span>8. Quantum Numbers</a></li>
-            <li><a href="#chapter-9"><span class="sidebar-check" id="sidebar-check-9"></span>9. Electronic Configuration Rules</a></li>
-            <li><a href="#chapter-10"><span class="sidebar-check" id="sidebar-check-10"></span>10. Periodic Table & Shielding</a></li>
-            <li><a href="#chapter-11"><span class="sidebar-check" id="sidebar-check-11"></span>11. Ionization Energy & Electron Affinity</a></li>
-            <li><a href="#chapter-12"><span class="sidebar-check" id="sidebar-check-12"></span>12. Electronegativity & Metallic Character</a></li>
-            <li><a href="#chapter-13"><span class="sidebar-check" id="sidebar-check-13"></span>13. Atomic & Ionic Radius Trends</a></li>
+            <li><a href="#chapter-1">1. Discovery of Electron, Proton & Neutron</a></li>
+            <li><a href="#chapter-2">2. Cathode Rays & Canal Rays</a></li>
+            <li><a href="#chapter-3">3. Chadwick's Experiment</a></li>
+            <li><a href="#chapter-4">4. Rutherford's Atomic Model</a></li>
+            <li><a href="#chapter-5">5. Bohr's Atomic Theory</a></li>
+            <li><a href="#chapter-6">6. Planck's Quantum Theory</a></li>
+            <li><a href="#chapter-7">7. X-Rays & Moseley's Law</a></li>
+            <li><a href="#chapter-8">8. Quantum Numbers</a></li>
+            <li><a href="#chapter-9">9. Electronic Configuration Rules</a></li>
+            <li><a href="#chapter-10">10. Periodic Table & Shielding</a></li>
+            <li><a href="#chapter-11">11. Ionization Energy & Electron Affinity</a></li>
+            <li><a href="#chapter-12">12. Electronegativity & Metallic Character</a></li>
+            <li><a href="#chapter-13">13. Atomic & Ionic Radius Trends</a></li>
         </ul>
     </aside>
 
@@ -55,10 +52,8 @@
 
         <!-- CHAPTER 1 -->
         <section id="chapter-1" class="chapter-block">
-            <div class="chapter-block-header">
-                <h2>Chapter 1: Discovery of Electron, Proton and Neutron</h2>
-                <button class="mark-read-btn" id="mark-read-ch1" onclick="toggleChapterRead(1)">Mark as read</button>
-            </div>
+            <h2>Chapter 1: Discovery of Electron, Proton and Neutron</h2>
+
             <h3>Discovery of Electron (J.J. Thomson, 1897)</h3>
             <ul>
                 <li>Discovered using a <strong>discharge tube</strong> containing gas at very low pressure (~10⁻⁴ atm) under high voltage (~10,000 V).</li>
@@ -67,6 +62,7 @@
                 <li>Thomson calculated the <strong>charge-to-mass ratio (e/m)</strong> of the electron = <strong>1.76 × 10⁸ C/g</strong>.</li>
                 <li>The e/m ratio was found to be the <strong>same regardless of the gas</strong> used in the tube — proving electrons are a universal constituent of all atoms.</li>
             </ul>
+
             <h3>Discovery of Proton (E. Goldstein, 1886)</h3>
             <ul>
                 <li>Discovered through <strong>canal rays (anode rays)</strong> — positively charged rays moving from anode toward cathode, observed through holes drilled in the cathode.</li>
@@ -74,15 +70,17 @@
                 <li>The <strong>smallest and lightest</strong> positive particle was obtained when <strong>hydrogen gas</strong> was used — named the <strong>proton</strong> by Rutherford (1919).</li>
                 <li>Charge on proton = +1.6 × 10⁻¹⁹ C; Mass ≈ 1.6726 × 10⁻²⁴ g (1 amu).</li>
             </ul>
-            <h3>Millikan's Oil Drop Experiment (1909)</h3>
+
+            <h3>Determination of Charge on Electron (Millikan's Oil Drop Experiment, 1909)</h3>
             <ul>
                 <li>Tiny oil droplets were sprayed into a chamber and allowed to fall under gravity between two charged plates.</li>
                 <li>By adjusting the electric field, droplets could be held stationary — balancing electric force against gravity.</li>
                 <li>Found charge on electron = <strong>−1.6022 × 10⁻¹⁹ C</strong> (the fundamental unit of charge).</li>
-                <li>Using e/m (from Thomson) and e (from Millikan), mass of electron = <strong>9.11 × 10⁻²⁸ g</strong> (about 1/1837th the mass of a proton).</li>
+                <li>Using e/m (from Thomson) and e (from Millikan), mass of electron was calculated = <strong>9.11 × 10⁻²⁸ g</strong> (about 1/1837th the mass of a proton).</li>
             </ul>
+
             <div class="quick-revision-box">
-                <h4>Quick Revision</h4>
+                <h4>⚡ Quick Revision</h4>
                 <ul>
                     <li>Cathode rays = electrons (same e/m for all gases). Canal rays = positive ions (e/m varies with gas).</li>
                     <li>Smallest positive particle = from H₂ gas = proton.</li>
@@ -90,35 +88,61 @@
                     <li><strong>Common trap:</strong> Don't confuse Thomson (e/m) with Millikan (e) — a frequent MCQ distractor.</li>
                 </ul>
             </div>
+
             <h3>Comparison Table: Cathode Rays vs Canal Rays</h3>
             <table>
-                <thead><tr><th>Property</th><th>Cathode Rays</th><th>Canal Rays</th></tr></thead>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Cathode Rays</th>
+                        <th>Canal Rays</th>
+                    </tr>
+                </thead>
                 <tbody>
-                    <tr><td>Charge</td><td>Negative</td><td>Positive</td></tr>
-                    <tr><td>Direction</td><td>Cathode → Anode</td><td>Anode → Cathode</td></tr>
-                    <tr><td>e/m ratio</td><td>Constant (independent of gas)</td><td>Variable (depends on gas)</td></tr>
-                    <tr><td>Discovered by</td><td>J.J. Thomson</td><td>E. Goldstein</td></tr>
-                    <tr><td>Smallest particle (H₂)</td><td>Electron</td><td>Proton</td></tr>
+                    <tr>
+                        <td>Charge</td>
+                        <td>Negative</td>
+                        <td>Positive</td>
+                    </tr>
+                    <tr>
+                        <td>Direction of travel</td>
+                        <td>Cathode → Anode</td>
+                        <td>Anode → Cathode</td>
+                    </tr>
+                    <tr>
+                        <td>e/m ratio</td>
+                        <td>Constant (independent of gas)</td>
+                        <td>Variable (depends on gas)</td>
+                    </tr>
+                    <tr>
+                        <td>Discovered by</td>
+                        <td>J.J. Thomson</td>
+                        <td>E. Goldstein</td>
+                    </tr>
+                    <tr>
+                        <td>Smallest particle (in H₂)</td>
+                        <td>Electron</td>
+                        <td>Proton</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
 
         <!-- CHAPTER 2 -->
         <section id="chapter-2" class="chapter-block">
-            <div class="chapter-block-header">
-                <h2>Chapter 2: Cathode Rays & Canal Rays Properties</h2>
-                <button class="mark-read-btn" id="mark-read-ch2" onclick="toggleChapterRead(2)">Mark as read</button>
-            </div>
+            <h2>Chapter 2: Cathode Rays & Canal Rays Properties</h2>
+
             <h3>Properties of Cathode Rays</h3>
             <ul>
                 <li>Travel in straight lines (cast sharp shadows of objects placed in their path).</li>
-                <li>Travel perpendicular to the surface of the cathode, regardless of anode position.</li>
+                <li>Travel perpendicular to the surface of the cathode, regardless of the position of the anode.</li>
                 <li>Possess <strong>kinetic energy</strong> — can rotate a small paddle wheel placed in their path (proves they have mass and momentum).</li>
                 <li>Deflected by electric and magnetic fields → confirms they are charged particles, not electromagnetic waves.</li>
                 <li>Can ionize gases through which they pass and cause fluorescence on striking ZnS (zinc sulphide) screens.</li>
-                <li>Produce X-rays when they strike a heavy metal target (links Ch.2 to Ch.7).</li>
+                <li>Produce X-rays when they strike a heavy metal target (this principle is later used in Moseley's experiment, Chapter 7).</li>
                 <li>Independent of the electrode material and the gas in the discharge tube.</li>
             </ul>
+
             <h3>Properties of Canal Rays (Anode Rays)</h3>
             <ul>
                 <li>Travel in straight lines, in a direction <strong>opposite</strong> to cathode rays.</li>
@@ -127,451 +151,389 @@
                 <li>e/m ratio depends on the nature of the gas — heavier gas gives a smaller e/m ratio.</li>
                 <li>Composed of positively charged ions formed when cathode ray electrons knock electrons off gas molecules.</li>
             </ul>
+
             <div class="quick-revision-box">
-                <h4>Quick Revision</h4>
+                <h4>⚡ Quick Revision</h4>
                 <ul>
                     <li>Cathode ray properties that prove particle nature: paddle wheel rotation (mass) + deflection (charge).</li>
                     <li>Cathode rays → independent of gas/electrode. Canal rays → dependent on gas.</li>
-                    <li><strong>Exam trick:</strong> "Cathode rays produce X-rays on striking heavy metals" frequently links Ch.2 to Ch.7.</li>
+                    <li><strong>Exam trick:</strong> "Cathode rays produce X-rays on striking heavy metals" is a frequently tested fact linking Ch.2 to Ch.7.</li>
                 </ul>
             </div>
+
+            <h3>Summary Table: Behaviour in Fields</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ray Type</th>
+                        <th>Deflects Toward</th>
+                        <th>Speed</th>
+                        <th>Depends on Gas?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cathode Rays</td>
+                        <td>Positive plate</td>
+                        <td>High (close to light speed)</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Canal Rays</td>
+                        <td>Negative plate</td>
+                        <td>Low (heavier particles)</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <!-- CHAPTER 3 -->
         <section id="chapter-3" class="chapter-block">
-            <div class="chapter-block-header">
-                <h2>Chapter 3: Discovery of Neutron (Chadwick's Experiment, 1932)</h2>
-                <button class="mark-read-btn" id="mark-read-ch3" onclick="toggleChapterRead(3)">Mark as read</button>
-            </div>
+            <h2>Chapter 3: Discovery of Neutron (Chadwick's Experiment, 1932)</h2>
+
             <h3>Background Problem</h3>
             <ul>
-                <li>Atomic mass of elements (except hydrogen) was roughly <strong>double</strong> the atomic number — the nucleus contained mass not accounted for by protons alone.</li>
-                <li>This "missing mass" puzzle led scientists to predict a neutral particle in the nucleus.</li>
+                <li>Atomic mass of elements (except hydrogen) was found to be roughly <strong>double</strong> the atomic number — meaning the nucleus contained mass not accounted for by protons alone.</li>
+                <li>This "missing mass" puzzle led scientists to predict the existence of a neutral particle in the nucleus.</li>
             </ul>
+
             <h3>Chadwick's Experiment</h3>
             <ul>
                 <li>Bombarded a <strong>beryllium (Be) target</strong> with high-energy <strong>alpha particles (α)</strong> emitted from polonium.</li>
-                <li>Reaction: ⁹Be + ⁴He(α) → ¹²C + ¹n</li>
-                <li>Emitted radiation could penetrate thick sheets of lead but was <strong>not deflected</strong> by electric or magnetic fields — proving it carried <strong>no charge</strong>.</li>
-                <li>When the radiation struck paraffin wax (rich in hydrogen), it knocked out high-speed protons.</li>
-                <li>By conservation of momentum, Chadwick calculated mass ≈ mass of a proton → named <strong>neutron</strong>.</li>
-                <li>Neutron: neutral charge, mass ≈ 1.0087 amu (slightly greater than proton's mass).</li>
+                <li>Reaction: ⁹Be + ⁴He(α) → ¹²C + ¹n (a neutral particle was emitted).</li>
+                <li>This emitted radiation could penetrate thick sheets of lead (uncharged, highly penetrating) but was <strong>not deflected</strong> by electric or magnetic fields — proving it carried <strong>no charge</strong>.</li>
+                <li>When the radiation struck a block of paraffin wax (rich in hydrogen), it knocked out high-speed protons.</li>
+                <li>By measuring the energy/velocity of these ejected protons (using conservation of momentum), Chadwick calculated the mass of the bombarding particle ≈ mass of a proton.</li>
+                <li>This particle was named the <strong>neutron</strong> — neutral charge, mass ≈ 1.0087 amu (slightly greater than proton's mass).</li>
             </ul>
+
             <div class="quick-revision-box">
-                <h4>Quick Revision</h4>
+                <h4>⚡ Quick Revision</h4>
                 <ul>
-                    <li>Target = <strong>Beryllium</strong>. Bombarding particle = <strong>Alpha particle</strong>. Result = <strong>Neutron</strong>.</li>
-                    <li>Neutron mass is <strong>slightly greater</strong> than proton mass — common MCQ distractor.</li>
-                    <li>Key proof: high penetration + no deflection in fields = neutral particle.</li>
-                    <li>Neutron discovered ~30 years after electron/proton — explains why Rutherford's and Bohr's models had no neutron.</li>
+                    <li>Target element = <strong>Beryllium</strong>. Bombarding particle = <strong>Alpha particle</strong>. Result = <strong>Neutron</strong>.</li>
+                    <li>Neutron mass is <strong>slightly greater</strong> than proton mass — common MCQ distractor (many think they're exactly equal).</li>
+                    <li>Key proof of neutron: high penetration power + no deflection in fields = neutral particle.</li>
+                    <li>Neutron discovered ~30 years after electron/proton — explains why atomic models (Thomson, Rutherford, Bohr) initially had no neutron.</li>
                 </ul>
             </div>
+
             <h3>Comparison Table: Fundamental Particles</h3>
             <table>
-                <thead><tr><th>Particle</th><th>Charge</th><th>Mass (amu)</th><th>Discoverer</th><th>Year</th></tr></thead>
+                <thead>
+                    <tr>
+                        <th>Particle</th>
+                        <th>Charge</th>
+                        <th>Mass (amu)</th>
+                        <th>Discoverer</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
                 <tbody>
-                    <tr><td>Electron</td><td>−1</td><td>≈ 0.00055</td><td>J.J. Thomson</td><td>1897</td></tr>
-                    <tr><td>Proton</td><td>+1</td><td>1.0073</td><td>Goldstein / Rutherford</td><td>1886/1919</td></tr>
-                    <tr><td>Neutron</td><td>0</td><td>1.0087</td><td>James Chadwick</td><td>1932</td></tr>
+                    <tr>
+                        <td>Electron</td>
+                        <td>−1</td>
+                        <td>≈ 0.00055</td>
+                        <td>J.J. Thomson</td>
+                        <td>1897</td>
+                    </tr>
+                    <tr>
+                        <td>Proton</td>
+                        <td>+1</td>
+                        <td>1.0073</td>
+                        <td>E. Goldstein / Rutherford</td>
+                        <td>1886/1919</td>
+                    </tr>
+                    <tr>
+                        <td>Neutron</td>
+                        <td>0</td>
+                        <td>1.0087</td>
+                        <td>James Chadwick</td>
+                        <td>1932</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
 
         <!-- CHAPTER 4 -->
         <section id="chapter-4" class="chapter-block">
-            <div class="chapter-block-header">
-                <h2>Chapter 4: Rutherford's Atomic Model & Its Defects</h2>
-                <button class="mark-read-btn" id="mark-read-ch4" onclick="toggleChapterRead(4)">Mark as read</button>
-            </div>
-            <h3>Gold Foil (Alpha Scattering) Experiment</h3>
+            <h2>Chapter 4: Rutherford's Atomic Model & Its Defects</h2>
+
+            <h3>Rutherford's Gold Foil (Alpha Scattering) Experiment</h3>
             <ul>
                 <li>A beam of fast-moving <strong>alpha particles</strong> was directed at an extremely thin sheet of <strong>gold foil</strong> (~10⁻⁴ cm thick), surrounded by a circular ZnS fluorescent screen.</li>
-                <li><strong>Observation 1:</strong> Most alpha particles (~99%) passed straight through → atom is mostly <strong>empty space</strong>.</li>
-                <li><strong>Observation 2:</strong> A small fraction were deflected at various angles → a concentrated positive region exists.</li>
-                <li><strong>Observation 3:</strong> ~1 in 8000 bounced almost straight back (~180°) → this region is <strong>extremely small but contains nearly all the mass</strong>.</li>
+                <li><strong>Observation 1:</strong> Most alpha particles (~99%) passed straight through undeflected → atom is mostly <strong>empty space</strong>.</li>
+                <li><strong>Observation 2:</strong> A small fraction were deflected at various angles → there exists a concentrated positive region.</li>
+                <li><strong>Observation 3:</strong> A very small number (~1 in 8000) bounced almost straight back (~180°) → this dense positive region is <strong>extremely small but contains nearly all the mass</strong>.</li>
             </ul>
-            <h3>Postulates of Rutherford's Model</h3>
+
+            <h3>Rutherford's Atomic Model (Postulates)</h3>
             <ul>
-                <li>All positive charge and almost all mass is concentrated in a tiny central <strong>nucleus</strong>.</li>
-                <li>Electrons revolve around the nucleus in circular orbits — similar to planets orbiting the sun ("planetary model").</li>
-                <li>Nucleus size (~10⁻¹³ cm) is extremely small compared to atom size (~10⁻⁸ cm) — atom is mostly empty space.</li>
-                <li>Number of electrons = number of protons → atom is electrically neutral.</li>
+                <li>All the positive charge and almost the entire mass of the atom is concentrated in a tiny central core called the <strong>nucleus</strong>.</li>
+                <li>The nucleus is surrounded by electrons revolving around it in circular orbits at high speed — similar to planets orbiting the sun (hence called the "planetary model").</li>
+                <li>The size of the nucleus (~10⁻¹³ cm) is extremely small compared to the size of the atom (~10⁻⁸ cm) — the atom is mostly empty space.</li>
+                <li>The number of electrons revolving around the nucleus equals the number of positive charges (protons) in the nucleus, making the atom electrically neutral.</li>
             </ul>
-            <h3>Defects of Rutherford's Model</h3>
+
+            <h3>Defects (Drawbacks) of Rutherford's Model</h3>
             <ul>
-                <li><strong>Stability problem:</strong> An orbiting electron must continuously emit radiation, losing energy, and spiral into the nucleus within ~10⁻⁸ seconds — but atoms are stable. Model fails to explain this.</li>
-                <li><strong>No explanation for line spectra:</strong> Continuous energy loss predicts a continuous spectrum; but atomic spectra show discrete <strong>line spectra</strong>.</li>
-                <li><strong>No electron arrangement:</strong> Model gives no concept of shells or energy levels.</li>
+                <li><strong>Stability problem:</strong> According to classical electromagnetic theory, an accelerating (orbiting) charged particle must continuously emit radiation, losing energy. This would cause the electron to spiral into the nucleus within ~10⁻⁸ seconds — but atoms are stable. Rutherford's model failed to explain this.</li>
+                <li><strong>No explanation for line spectra:</strong> If electrons lose energy continuously, they should emit a <strong>continuous spectrum</strong>. But atomic spectra (e.g., hydrogen) are observed as discrete <strong>line spectra</strong> — unexplained by this model.</li>
+                <li><strong>No information about electron arrangement:</strong> The model gave no idea about how electrons are distributed/arranged within the atom (no concept of shells/energy levels).</li>
             </ul>
+
             <div class="quick-revision-box">
-                <h4>Quick Revision</h4>
+                <h4>⚡ Quick Revision</h4>
                 <ul>
                     <li>Mnemonic for 3 observations: <strong>"Mostly empty, slightly deflected, rarely bounced back."</strong></li>
-                    <li>Biggest defect = <strong>instability</strong> (spiraling electron) — directly fixed by Bohr's Postulate 3.</li>
-                    <li>Nucleus : Atom size ratio ≈ 1 : 10,000 — frequently asked.</li>
-                    <li><strong>Trap:</strong> Rutherford's model did NOT include the neutron (discovered 1932, after 1911 model).</li>
+                    <li>Biggest defect = <strong>instability</strong> (spiraling electron) — this is what Bohr's theory (Ch.5) directly fixes.</li>
+                    <li>Nucleus size : Atom size ≈ 1 : 10,000 — frequently asked ratio/order-of-magnitude question.</li>
+                    <li><strong>Trap:</strong> Rutherford's model did NOT predict the neutron (discovered 1932, after this 1911 model).</li>
                 </ul>
             </div>
         </section>
-
-        <!-- CHAPTER 5 -->
-        <section id="chapter-5" class="chapter-block">
-            <div class="chapter-block-header">
-                <h2>Chapter 5: Bohr's Atomic Theory & Postulates</h2>
-                <button class="mark-read-btn" id="mark-read-ch5" onclick="toggleChapterRead(5)">Mark as read</button>
-            </div>
-            <h3>Postulates of Bohr's Theory</h3>
-            <ul>
-                <li><strong>Postulate 1 (Quantized Orbits):</strong> Electrons revolve only in certain fixed circular paths called orbits/shells/energy levels, designated by principal quantum number n = 1, 2, 3...</li>
-                <li><strong>Postulate 2 (Angular Momentum Quantization):</strong> mvr = nh/2π</li>
-                <li><strong>Postulate 3 (Stationary States):</strong> Electrons in a given orbit do <strong>not radiate energy</strong> — these are called stationary/ground states. Directly resolves Rutherford's stability defect.</li>
-                <li><strong>Postulate 4 (Energy Absorption/Emission):</strong> ΔE = E₂ − E₁ = hν</li>
-            </ul>
-            <h3>Key Formulas (Hydrogen-like species)</h3>
-            <ul>
-                <li>Radius of nth orbit: rₙ = (0.529 × n²)/Z Å</li>
-                <li>Energy of nth orbit: Eₙ = −(13.6 × Z²)/n² eV</li>
-                <li>For H atom (Z=1), n=1: radius = 0.529 Å, energy = −13.6 eV</li>
-            </ul>
-            <h3>Hydrogen Spectral Series</h3>
-            <ul>
-                <li><strong>Lyman series</strong> — falls to n=1 (UV region)</li>
-                <li><strong>Balmer series</strong> — falls to n=2 (Visible region)</li>
-                <li><strong>Paschen series</strong> — falls to n=3 (Infrared region)</li>
-            </ul>
-            <h3>Limitations of Bohr's Theory</h3>
-            <ul>
-                <li>Could not explain spectra of <strong>multi-electron atoms</strong> (only works for H and H-like ions: He⁺, Li²⁺).</li>
-                <li>Could not explain <strong>Zeeman effect</strong> (splitting in magnetic field) or <strong>Stark effect</strong> (splitting in electric field).</li>
-                <li>Violated <strong>Heisenberg's Uncertainty Principle</strong> — assumes exact position and velocity simultaneously known.</li>
-                <li>Did not consider the <strong>wave nature</strong> of electrons (de Broglie).</li>
-                <li>Could not explain fine structure of spectral lines (later explained by Sommerfeld's elliptical orbits).</li>
-            </ul>
-            <div class="quick-revision-box">
-                <h4>Quick Revision</h4>
-                <ul>
-                    <li>Postulate that fixes Rutherford's defect: <strong>Postulate 3</strong> (stationary states).</li>
-                    <li>mvr = nh/2π — memorize; directly tested.</li>
-                    <li>Eₙ = −13.6/n² eV for H: E₁=−13.6, E₂=−3.4, E₃=−1.51 eV.</li>
-                    <li>Series energy order: Lyman > Balmer > Paschen (Lyman = highest energy, shortest wavelength).</li>
-                    <li><strong>Top AFNS trap:</strong> Bohr fails for multi-electron atoms — most tested limitation.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- CHAPTER 6 -->
-        <section id="chapter-6" class="chapter-block">
-            <div class="chapter-block-header">
-                <h2>Chapter 6: Planck's Quantum Theory</h2>
-                <button class="mark-read-btn" id="mark-read-ch6" onclick="toggleChapterRead(6)">Mark as read</button>
-            </div>
-            <h3>Planck's Postulates (1900)</h3>
-            <ul>
-                <li>Energy is <strong>not emitted or absorbed continuously</strong> — it comes in discrete packets called <strong>quanta</strong> (photons for light).</li>
-                <li>Energy of one quantum: <strong>E = hν</strong>, where h = 6.626 × 10⁻³⁴ J·s (Planck's constant).</li>
-                <li>Total energy: E = nhν (n = integer).</li>
-                <li>Since c = νλ: <strong>E = hc/λ</strong> — energy is <strong>inversely proportional</strong> to wavelength.</li>
-            </ul>
-            <h3>Significance</h3>
-            <ul>
-                <li>Resolved the "ultraviolet catastrophe" — classical physics predicted infinite energy at short wavelengths from a hot black body.</li>
-                <li>Provided the basis for Einstein's explanation of the <strong>photoelectric effect</strong>.</li>
-                <li>Became the foundation of Bohr's 4th postulate (ΔE = hν).</li>
-                <li>Marked the birth of <strong>Quantum Mechanics</strong>.</li>
-            </ul>
-            <div class="quick-revision-box">
-                <h4>Quick Revision</h4>
-                <ul>
-                    <li><strong>E = hν = hc/λ</strong> — most repeated formula across the entire syllabus.</li>
-                    <li>Energy ∝ frequency (direct); Energy ∝ 1/wavelength (inverse). Classic trick question reverses these.</li>
-                    <li>h = 6.626 × 10⁻³⁴ J·s — memorize value and units.</li>
-                    <li>Chain: Planck → Einstein (photoelectric) → Bohr (postulate 4). "Which came first?" is a favorite MCQ.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- CHAPTER 7 -->
-        <section id="chapter-7" class="chapter-block">
-            <div class="chapter-block-header">
-                <h2>Chapter 7: X-Rays & Atomic Number (Moseley's Law)</h2>
-                <button class="mark-read-btn" id="mark-read-ch7" onclick="toggleChapterRead(7)">Mark as read</button>
-            </div>
-            <h3>Discovery & Production of X-Rays</h3>
-            <ul>
-                <li>Discovered by <strong>Wilhelm Roentgen (1895)</strong> — accidentally, while working with a cathode ray tube.</li>
-                <li>Produced when <strong>high-speed cathode ray electrons</strong> strike a heavy metal target (e.g., tungsten or molybdenum).</li>
-                <li>X-rays are <strong>electromagnetic radiation</strong> of very short wavelength (~0.01 to 10 nm) — very high energy and penetrating power.</li>
-                <li>Not deflected by electric or magnetic fields (uncharged).</li>
-            </ul>
-            <h3>Moseley's Law (1913)</h3>
-            <ul>
-                <li>Studied X-ray spectra of various elements; found a relationship between X-ray frequency and the <strong>atomic number (Z)</strong> of the target.</li>
-                <li>Mathematical form: <strong>√ν = a(Z − b)</strong>, where 'a' and 'b' are constants (b ≈ 1).</li>
-                <li>A plot of √ν vs Z gives a <strong>straight line</strong>.</li>
-                <li>Proved that <strong>atomic number (Z)</strong>, not atomic mass, is the fundamental property determining an element's position in the periodic table.</li>
-                <li>Corrected the periodic table (resolved Co/Ni, Ar/K anomalies) and predicted undiscovered elements.</li>
-            </ul>
-            <div class="quick-revision-box">
-                <h4>Quick Revision</h4>
-                <ul>
-                    <li>Moseley's Law: <strong>√ν = a(Z − b)</strong> — directly examinable formula.</li>
-                    <li>Biggest significance: atomic number (not mass) is the basis of periodic classification.</li>
-                    <li>X-rays produced by <strong>decelerating fast electrons</strong> hitting a metal target — link back to Ch.2.</li>
-                    <li><strong>Trap:</strong> X-rays are NOT charged (unlike cathode/canal rays) — hence not deflected by fields.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- CHAPTER 8 -->
-        <section id="chapter-8" class="chapter-block">
-            <div class="chapter-block-header">
-                <h2>Chapter 8: Quantum Numbers</h2>
-                <button class="mark-read-btn" id="mark-read-ch8" onclick="toggleChapterRead(8)">Mark as read</button>
-            </div>
-            <h3>1. Principal Quantum Number (n)</h3>
-            <ul>
-                <li>Denotes the <strong>main energy level/shell</strong> in which an electron is located.</li>
-                <li>Values: n = 1, 2, 3, 4... (K, L, M, N shells).</li>
-                <li>Determines <strong>size</strong> of the orbital and <strong>most of the energy</strong>.</li>
-                <li>Maximum electrons in a shell = 2n².</li>
-            </ul>
-            <h3>2. Azimuthal Quantum Number (l)</h3>
-            <ul>
-                <li>Denotes the <strong>subshell/shape</strong> of the orbital within a shell.</li>
-                <li>Values: l = 0 to (n−1).</li>
-                <li>l=0 → s (spherical); l=1 → p (dumbbell); l=2 → d (cloverleaf); l=3 → f (complex).</li>
-            </ul>
-            <h3>3. Magnetic Quantum Number (m)</h3>
-            <ul>
-                <li>Describes the <strong>orientation</strong> of the orbital in 3D space.</li>
-                <li>Values: m = −l to +l (total of 2l+1 values).</li>
-                <li>s: 1 orbital; p: 3 orbitals; d: 5 orbitals; f: 7 orbitals.</li>
-            </ul>
-            <h3>4. Spin Quantum Number (s)</h3>
-            <ul>
-                <li>Describes the <strong>spin direction</strong> of the electron.</li>
-                <li>Values: +½ (↑) or −½ (↓) only.</li>
-                <li>Each orbital holds max 2 electrons with opposite spins.</li>
-            </ul>
-            <div class="quick-revision-box">
-                <h4>Quick Revision</h4>
-                <ul>
-                    <li>n → shell/size/energy; l → subshell/shape; m → orientation; s → spin.</li>
-                    <li>For n=4: n² = 16 orbitals → max 32 electrons (2n²).</li>
-                    <li>Number of orbitals in a subshell = 2l+1 (s=1, p=3, d=5, f=7) — heavily tested.</li>
-                    <li><strong>Trap:</strong> m values depend on l, NOT directly on n.</li>
-                </ul>
-            </div>
-            <h3>Summary Table: Quantum Numbers</h3>
-            <table>
-                <thead><tr><th>Quantum Number</th><th>Symbol</th><th>Values</th><th>Determines</th></tr></thead>
-                <tbody>
-                    <tr><td>Principal</td><td>n</td><td>1, 2, 3...</td><td>Shell size & main energy</td></tr>
-                    <tr><td>Azimuthal</td><td>l</td><td>0 to (n−1)</td><td>Subshell shape</td></tr>
-                    <tr><td>Magnetic</td><td>m</td><td>−l to +l</td><td>Orbital orientation</td></tr>
-                    <tr><td>Spin</td><td>s</td><td>+½ or −½</td><td>Electron spin direction</td></tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- CHAPTER 9 -->
-        <section id="chapter-9" class="chapter-block">
-            <div class="chapter-block-header">
-                <h2>Chapter 9: Electronic Configuration Rules</h2>
-                <button class="mark-read-btn" id="mark-read-ch9" onclick="toggleChapterRead(9)">Mark as read</button>
-            </div>
-            <h3>1. Aufbau Principle</h3>
-            <ul>
-                <li>Electrons fill orbitals in order of <strong>increasing energy</strong> — lowest energy fills first.</li>
-                <li>Order: 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, 5s, 4d, 5p, 6s, 4f, 5d...</li>
-                <li><strong>(n+l) rule:</strong> Lower (n+l) fills first; if tied, lower n fills first. E.g., 4s (n+l=4) before 3d (n+l=5).</li>
-            </ul>
-            <h3>2. Pauli Exclusion Principle</h3>
-            <ul>
-                <li>No two electrons in an atom can have the <strong>same set of all four quantum numbers</strong>.</li>
-                <li>Each orbital holds a <strong>maximum of 2 electrons with opposite spins</strong>.</li>
-            </ul>
-            <h3>3. Hund's Rule of Maximum Multiplicity</h3>
-            <ul>
-                <li>Electrons in degenerate (equal energy) orbitals occupy separate orbitals singly with <strong>parallel spins</strong> before any pairing occurs.</li>
-                <li>Example: C (2p²) → ↑ in 2p_x and ↑ in 2p_y (not paired in same orbital).</li>
-            </ul>
-            <h3>Exceptions to Aufbau Principle (High-Yield)</h3>
-            <ul>
-                <li><strong>Chromium (Cr, Z=24):</strong> Expected [Ar]3d⁴4s² → Actual = <strong>[Ar]3d⁵4s¹</strong> (half-filled d gives extra stability).</li>
-                <li><strong>Copper (Cu, Z=29):</strong> Expected [Ar]3d⁹4s² → Actual = <strong>[Ar]3d¹⁰4s¹</strong> (fully-filled d gives extra stability).</li>
-                <li><strong>Reason:</strong> Half-filled and fully-filled subshells have greater symmetry and exchange energy stabilization.</li>
-            </ul>
-            <div class="quick-revision-box">
-                <h4>Quick Revision</h4>
-                <ul>
-                    <li><strong>4s fills BEFORE 3d</strong> (Aufbau) — but when writing ion configs, 4s electrons are <strong>removed first</strong>. E.g., Fe²⁺ = [Ar]3d⁶. Very high-yield trap.</li>
-                    <li>Cr = [Ar]3d⁵4s¹ and Cu = [Ar]3d¹⁰4s¹ — memorize these cold; appear almost every year.</li>
-                    <li>Pauli: max 2 e⁻/orbital opposite spins. Hund: distribute before pairing in same subshell.</li>
-                </ul>
-            </div>
-            <h3>Comparison Table: The Three Rules</h3>
-            <table>
-                <thead><tr><th>Rule</th><th>Statement (Short)</th><th>Governs</th></tr></thead>
-                <tbody>
-                    <tr><td>Aufbau Principle</td><td>Fill lowest energy orbitals first</td><td>Order of filling subshells</td></tr>
-                    <tr><td>Pauli Exclusion</td><td>Max 2 e⁻/orbital, opposite spins</td><td>Capacity of each orbital</td></tr>
-                    <tr><td>Hund's Rule</td><td>Max unpaired e⁻ in degenerate orbitals</td><td>Distribution within a subshell</td></tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- CHAPTER 10 -->
+<!-- CHAPTER 10 -->
         <section id="chapter-10" class="chapter-block">
-            <div class="chapter-block-header">
-                <h2>Chapter 10: Modern Periodic Table & Shielding Effect</h2>
-                <button class="mark-read-btn" id="mark-read-ch10" onclick="toggleChapterRead(10)">Mark as read</button>
-            </div>
+            <h2>Chapter 10: Modern Periodic Table & Shielding Effect</h2>
+
             <h3>Modern Periodic Law</h3>
             <ul>
-                <li>"Physical and chemical properties of elements are <strong>periodic functions of their atomic numbers</strong>" — direct consequence of Moseley's work.</li>
-                <li>7 horizontal rows (<strong>periods</strong>) and 18 vertical columns (<strong>groups</strong>).</li>
-                <li>4 blocks: <strong>s-block</strong> (Groups 1-2), <strong>p-block</strong> (Groups 13-18), <strong>d-block</strong> (Groups 3-12), <strong>f-block</strong> (lanthanides & actinides).</li>
+                <li>Stated as: "The physical and chemical properties of elements are <strong>periodic functions of their atomic numbers</strong>" — a direct consequence of Moseley's work (Ch.7).</li>
+                <li>The Modern Periodic Table arranges elements in order of increasing atomic number (Z), in 7 horizontal rows (<strong>periods</strong>) and 18 vertical columns (<strong>groups</strong>).</li>
             </ul>
+
+            <h3>Periods & Groups</h3>
+            <ul>
+                <li><strong>Periods (1–7):</strong> Indicate the value of the principal quantum number (n) of the outermost shell. Period number = number of shells.</li>
+                <li><strong>Groups (1–18):</strong> Elements in the same group have the same number of valence electrons and similar chemical properties.</li>
+                <li>Elements are classified into 4 blocks: <strong>s-block</strong> (Groups 1-2), <strong>p-block</strong> (Groups 13-18), <strong>d-block</strong> (Groups 3-12, transition metals), <strong>f-block</strong> (lanthanides & actinides).</li>
+            </ul>
+
             <h3>Shielding (Screening) Effect</h3>
             <ul>
-                <li>Inner-shell electrons <strong>repel/shield</strong> outer (valence) electrons from the full nuclear pull.</li>
-                <li>Reduces the net positive charge experienced by valence electrons = <strong>Effective Nuclear Charge (Zeff)</strong>.</li>
-                <li>Formula: <strong>Zeff = Z − S</strong> (Z = atomic number, S = shielding constant).</li>
-                <li><strong>Across a period:</strong> Shielding ~constant, Z increases → Zeff increases → atomic size decreases.</li>
-                <li><strong>Down a group:</strong> More shells added, shielding increases significantly → atomic size increases.</li>
+                <li>Inner-shell electrons <strong>repel/shield</strong> the outer (valence) electrons from the full attractive pull of the nucleus.</li>
+                <li>This reduces the <strong>net positive charge</strong> experienced by valence electrons — called the <strong>Effective Nuclear Charge (Zeff)</strong>.</li>
+                <li>Formula: <strong>Zeff = Z − S</strong>, where Z = actual nuclear charge (atomic number) and S = shielding/screening constant (≈ number of inner shielding electrons).</li>
+                <li><strong>Down a group:</strong> Shielding increases significantly (more shells added) → Zeff on valence electrons stays roughly similar, but electrons are farther away → atomic size increases.</li>
+                <li><strong>Across a period:</strong> Shielding stays roughly constant (electrons added to the same shell), but Z increases → Zeff increases → atomic size decreases.</li>
             </ul>
+
             <div class="quick-revision-box">
-                <h4>Quick Revision</h4>
+                <h4>⚡ Quick Revision</h4>
                 <ul>
-                    <li>Period number = number of electron shells = highest n for that element.</li>
-                    <li>Zeff = Z − S; greater shielding → lower Zeff → larger atomic size, lower ionization energy.</li>
-                    <li><strong>Key link:</strong> Shielding is the master concept behind Chapters 11, 12, 13.</li>
+                    <li>Period number = number of electron shells = highest value of n for that element.</li>
+                    <li>Zeff = Z − S; greater shielding → lower Zeff → weaker hold on valence electrons → larger atomic size, lower ionization energy.</li>
+                    <li><strong>Key link:</strong> Shielding effect is the master concept behind Chapters 11, 12, and 13 (ionization energy, electronegativity, atomic radius trends all depend on it).</li>
+                    <li><strong>Trap:</strong> "Same group, same valence electrons" — but shielding differs, so reactivity/size still changes down the group.</li>
                 </ul>
             </div>
+
+            <h3>Comparison Table: Trends Across a Period vs Down a Group</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Factor</th>
+                        <th>Across a Period (L → R)</th>
+                        <th>Down a Group (Top → Bottom)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Atomic Number (Z)</td>
+                        <td>Increases</td>
+                        <td>Increases</td>
+                    </tr>
+                    <tr>
+                        <td>Number of Shells</td>
+                        <td>Constant</td>
+                        <td>Increases</td>
+                    </tr>
+                    <tr>
+                        <td>Shielding (S)</td>
+                        <td>~Constant</td>
+                        <td>Increases</td>
+                    </tr>
+                    <tr>
+                        <td>Effective Nuclear Charge (Zeff)</td>
+                        <td>Increases</td>
+                        <td>~Constant / slight increase</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <!-- CHAPTER 11 -->
         <section id="chapter-11" class="chapter-block">
-            <div class="chapter-block-header">
-                <h2>Chapter 11: Ionization Energy & Electron Affinity</h2>
-                <button class="mark-read-btn" id="mark-read-ch11" onclick="toggleChapterRead(11)">Mark as read</button>
-            </div>
+            <h2>Chapter 11: Ionization Energy & Electron Affinity Trends</h2>
+
             <h3>Ionization Energy (IE)</h3>
             <ul>
-                <li>Minimum energy required to remove the outermost electron from an isolated, neutral gaseous atom in its ground state.</li>
-                <li>Always <strong>positive (endothermic)</strong>.</li>
-                <li><strong>Across a period:</strong> IE generally <strong>increases</strong> (increasing Zeff, decreasing size).</li>
-                <li><strong>Down a group:</strong> IE generally <strong>decreases</strong> (increasing size and shielding).</li>
+                <li><strong>Definition:</strong> The minimum energy required to remove the most loosely bound (outermost) electron from an isolated, gaseous, neutral atom in its ground state.</li>
+                <li>X(g) + Energy → X⁺(g) + e⁻ &nbsp; (always endothermic, IE is always positive)</li>
+                <li><strong>Across a period (L → R):</strong> IE generally <strong>increases</strong> — due to increasing Zeff and decreasing atomic size (electrons held more tightly).</li>
+                <li><strong>Down a group:</strong> IE generally <strong>decreases</strong> — due to increasing atomic size and shielding (outer electrons farther from nucleus, easier to remove).</li>
             </ul>
+
             <h3>Exceptions to IE Trend (High-Yield)</h3>
             <ul>
-                <li><strong>Be > B</strong>: Be has stable filled 2s²; B loses a higher-energy 2p¹ electron more easily.</li>
-                <li><strong>N > O</strong>: N has stable half-filled 2p³; O's paired 2p⁴ electron is easier to remove due to repulsion.</li>
-                <li><strong>Period 3 analogs:</strong> Mg > Al and P > S (same reasons).</li>
+                <li><strong>Be > B</strong> (Group 2 > Group 13): Be has a stable, fully-filled 2s² configuration; removing an electron from B's 2p¹ (which is higher in energy but less stable to lose due to penetration effects) is actually easier — so IE(B) < IE(Be).</li>
+                <li><strong>N > O</strong> (Group 15 > Group 16): N has a stable, half-filled 2p³ configuration (extra stability from symmetry); O's 2p⁴ has one paired orbital, and removing that paired electron is easier due to electron-electron repulsion — so IE(O) < IE(N).</li>
+                <li><strong>Mg > Al</strong> and <strong>P > S</strong> follow the same pattern as Be>B and N>O respectively (full/half-filled subshell stability).</li>
             </ul>
+
+            <h3>Successive Ionization Energies</h3>
+            <ul>
+                <li>IE₁ < IE₂ < IE₃ ... — each successive electron is removed from an increasingly positive ion, requiring more energy.</li>
+                <li>A very large jump between successive IE values indicates that the next electron is being removed from a <strong>new (inner, more stable) shell</strong> — used to determine the number of valence electrons.</li>
+            </ul>
+
             <h3>Electron Affinity (EA)</h3>
             <ul>
-                <li>Energy change when an electron is added to a neutral, gaseous atom to form an anion.</li>
-                <li>Usually <strong>exothermic (negative)</strong> for non-metals.</li>
-                <li><strong>Across a period:</strong> EA magnitude increases (higher Zeff). <strong>Down a group:</strong> EA magnitude decreases.</li>
-                <li><strong>Exception: Cl > F</strong> in EA magnitude — F's tiny 2p orbitals cause high e⁻-e⁻ repulsion when a new electron is added.</li>
-                <li>Noble gases have EA ≈ 0 or slightly positive (added electron must enter a new higher-energy shell).</li>
+                <li><strong>Definition:</strong> The energy change when an electron is added to a neutral, gaseous atom to form a negative ion (anion).</li>
+                <li>X(g) + e⁻ → X⁻(g) + Energy &nbsp; (usually exothermic / energy released → EA conventionally given a negative sign in many texts)</li>
+                <li><strong>Across a period:</strong> EA generally becomes more negative (increases in magnitude) — atoms more "eager" to gain electrons due to higher Zeff.</li>
+                <li><strong>Down a group:</strong> EA generally becomes less negative (decreases in magnitude) — larger atomic size means the added electron is farther from the nucleus.</li>
+                <li><strong>Exception:</strong> <strong>Cl has a more negative (higher magnitude) EA than F</strong> — despite F being smaller and having higher Zeff. Reason: F's very small atomic size causes significant electron-electron repulsion in its compact 2p orbitals when a new electron is added, making the process less favorable than for the larger Cl atom.</li>
+                <li><strong>Noble gases</strong> have EA ≈ 0 or slightly positive (endothermic) — stable full octet means added electron must go into a new, higher-energy shell.</li>
             </ul>
+
             <div class="quick-revision-box">
-                <h4>Quick Revision</h4>
+                <h4>⚡ Quick Revision</h4>
                 <ul>
-                    <li>Memorize 4 IE exceptions: <strong>Be>B, Mg>Al</strong> and <strong>N>O, P>S</strong> — all due to full/half-filled stability.</li>
-                    <li>EA exception: <strong>Cl > F</strong> in magnitude — most commonly tested EA exception.</li>
-                    <li>IE = always positive (endothermic). EA = usually negative (exothermic) except noble gases.</li>
+                    <li>Memorize all 4 exceptions: <strong>Be>B, Mg>Al (Group 2>13)</strong> and <strong>N>O, P>S (Group 15>16)</strong> — all due to full/half-filled stability.</li>
+                    <li>EA exception: <strong>Cl > F</strong> in magnitude (most commonly tested EA exception in the entire syllabus).</li>
+                    <li>General trend memory aid: IE & |EA| both increase across a period (left→right) and decrease down a group (top→bottom) — exceptions aside.</li>
+                    <li><strong>Trap:</strong> IE is ALWAYS positive (endothermic); EA is usually negative (exothermic) but can be positive for noble gases — don't mix up the signs.</li>
                 </ul>
             </div>
         </section>
 
         <!-- CHAPTER 12 -->
         <section id="chapter-12" class="chapter-block">
-            <div class="chapter-block-header">
-                <h2>Chapter 12: Electronegativity & Metallic Character</h2>
-                <button class="mark-read-btn" id="mark-read-ch12" onclick="toggleChapterRead(12)">Mark as read</button>
-            </div>
+            <h2>Chapter 12: Electronegativity & Metallic Character</h2>
+
             <h3>Electronegativity (EN)</h3>
             <ul>
-                <li>Relative tendency of a <strong>bonded</strong> atom to attract the shared pair of electrons toward itself.</li>
-                <li>Most common scale: <strong>Pauling scale</strong> — Fluorine (F) = <strong>4.0</strong> (highest of all elements).</li>
-                <li><strong>Across a period:</strong> EN <strong>increases</strong> (increasing Zeff, decreasing size).</li>
-                <li><strong>Down a group:</strong> EN <strong>decreases</strong> (increasing size and shielding).</li>
-                <li>Least electronegative = most electropositive = <strong>Cesium/Francium</strong> (bottom-left).</li>
+                <li><strong>Definition:</strong> The relative tendency of an atom in a molecule (a <strong>bonded</strong> atom) to attract the shared pair of electrons toward itself.</li>
+                <li>Most common scale: <strong>Pauling scale</strong> — Fluorine (F) has the highest EN value = <strong>4.0</strong> (the highest of all elements).</li>
+                <li><strong>Across a period:</strong> EN <strong>increases</strong> (left → right) — due to increasing Zeff and decreasing atomic size.</li>
+                <li><strong>Down a group:</strong> EN <strong>decreases</strong> — due to increasing atomic size and shielding.</li>
+                <li><strong>Most electronegative element overall = Fluorine (F)</strong>. <strong>Least electronegative (most electropositive) = Cesium/Francium (Cs/Fr)</strong>.</li>
             </ul>
+
             <h3>Metallic Character</h3>
             <ul>
-                <li>Tendency of an atom to <strong>lose electrons</strong> and form cations — related to low IE and low EN.</li>
-                <li><strong>Across a period:</strong> Metallic character <strong>decreases</strong>.</li>
-                <li><strong>Down a group:</strong> Metallic character <strong>increases</strong>.</li>
-                <li>Most metallic = <strong>bottom-left</strong> (Cs, Fr). Most non-metallic = <strong>top-right</strong> (F, excluding noble gases).</li>
+                <li><strong>Definition:</strong> The tendency of an atom to <strong>lose electrons</strong> and form positive ions (cations) — directly related to low ionization energy and low electronegativity.</li>
+                <li><strong>Across a period (L → R):</strong> Metallic character <strong>decreases</strong> (elements become more non-metallic) — as IE and EN increase, the tendency to lose electrons decreases.</li>
+                <li><strong>Down a group:</strong> Metallic character <strong>increases</strong> — as IE decreases, electrons are more easily lost.</li>
+                <li>Result: the most metallic elements are found in the <strong>bottom-left</strong> of the periodic table (e.g., Cesium, Francium); the most non-metallic elements are in the <strong>top-right</strong> (e.g., Fluorine, excluding noble gases).</li>
             </ul>
+
+            <h3>Relationship Summary</h3>
+            <ul>
+                <li>High IE + High EN + Small size = <strong>Non-metallic character</strong> (top-right of periodic table).</li>
+                <li>Low IE + Low EN + Large size = <strong>Metallic character</strong> (bottom-left of periodic table).</li>
+                <li>Metallic character is essentially the <strong>inverse trend</strong> of electronegativity and ionization energy.</li>
+            </ul>
+
             <div class="quick-revision-box">
-                <h4>Quick Revision</h4>
+                <h4>⚡ Quick Revision</h4>
                 <ul>
-                    <li><strong>Fluorine = most electronegative (4.0)</strong> — one of the most repeated single facts in chemistry MCQs.</li>
-                    <li>Metallic character is the <strong>OPPOSITE</strong> trend to electronegativity and ionization energy.</li>
-                    <li>Noble gases: technically excluded from EN comparisons — their full octet gives them near-zero tendency to share electrons.</li>
+                    <li><strong>Fluorine = most electronegative (4.0 on Pauling scale)</strong> — one of the most repeated single facts in chemistry MCQs.</li>
+                    <li>Metallic character is OPPOSITE to electronegativity trend: increases down a group & decreases across a period (mirror image of EN trend).</li>
+                    <li>Diagonal relationship memory aid: Metallic character is highest at bottom-left, non-metallic highest at top-right (excluding noble gases) — forms a diagonal "staircase" of metalloids separating metals and non-metals.</li>
+                    <li><strong>Trap:</strong> Noble gases technically have very low/undefined EN values on most scales despite being on the far right — often excluded from "most electronegative" comparisons.</li>
                 </ul>
             </div>
         </section>
 
         <!-- CHAPTER 13 -->
         <section id="chapter-13" class="chapter-block">
-            <div class="chapter-block-header">
-                <h2>Chapter 13: Atomic Radius & Ionic Radius Trends</h2>
-                <button class="mark-read-btn" id="mark-read-ch13" onclick="toggleChapterRead(13)">Mark as read</button>
-            </div>
+            <h2>Chapter 13: Atomic Radius & Ionic Radius Trends</h2>
+
             <h3>Atomic Radius</h3>
             <ul>
-                <li>Half the distance between the nuclei of two bonded identical atoms (covalent radius).</li>
-                <li><strong>Across a period:</strong> Atomic radius <strong>decreases</strong> — same shells, increasing Zeff pulls electrons closer.</li>
-                <li><strong>Down a group:</strong> Atomic radius <strong>increases</strong> — additional shells added, shielding increases.</li>
+                <li><strong>Definition:</strong> Half the distance between the nuclei of two bonded/adjacent identical atoms (covalent radius) or half the distance between two atoms in contact in a metallic lattice (metallic radius).</li>
+                <li><strong>Across a period (L → R):</strong> Atomic radius <strong>decreases</strong> — number of shells stays the same, but Zeff increases, pulling electrons closer to the nucleus.</li>
+                <li><strong>Down a group:</strong> Atomic radius <strong>increases</strong> — additional electron shells are added, and increased shielding outweighs the increase in nuclear charge.</li>
             </ul>
+
             <h3>Ionic Radius</h3>
             <ul>
-                <li><strong>Cations:</strong> Always <strong>smaller</strong> than the parent atom (electrons removed → less repulsion, tighter pull, often lose an entire shell).</li>
-                <li><strong>Anions:</strong> Always <strong>larger</strong> than the parent atom (electrons added → more repulsion, lower Zeff per electron, cloud expands).</li>
+                <li><strong>Cations (positive ions):</strong> Always <strong>smaller</strong> than their parent atom. Removing electron(s) reduces electron-electron repulsion and often removes an entire shell, and the remaining electrons are pulled in closer by the (now relatively larger) Zeff per electron.</li>
+                <li><strong>Anions (negative ions):</strong> Always <strong>larger</strong> than their parent atom. Adding electron(s) increases electron-electron repulsion, and Zeff per electron decreases, allowing the electron cloud to expand.</li>
+                <li><strong>Order example:</strong> Na⁺ < Na (cation smaller than atom); Cl⁻ > Cl (anion larger than atom).</li>
             </ul>
+
             <h3>Isoelectronic Species</h3>
             <ul>
-                <li>Species with the <strong>same number of electrons</strong>.</li>
-                <li>Among isoelectronic species: <strong>more protons (higher Z) = smaller radius</strong>.</li>
-                <li>Example (all 10 e⁻): O²⁻ > F⁻ > Ne > Na⁺ > Mg²⁺ > Al³⁺ (Z: 8→13, radius decreases).</li>
+                <li><strong>Definition:</strong> Species (atoms/ions) having the <strong>same number of electrons</strong> (same electronic configuration).</li>
+                <li>Among isoelectronic species, <strong>radius decreases as nuclear charge (Z) increases</strong> — more protons pull the same number of electrons in more tightly.</li>
+                <li>Example series (all 10 electrons): O²⁻ > F⁻ > Ne > Na⁺ > Mg²⁺ > Al³⁺ — radius decreases left to right as Z increases (8→13) while electron count stays constant at 10.</li>
             </ul>
-            <div class="quick-revision-box">
-                <h4>Quick Revision</h4>
-                <ul>
-                    <li><strong>Cation always smaller, anion always larger</strong> than the parent atom — one of the most-tested facts.</li>
-                    <li>Isoelectronic: same electrons → more protons = smaller radius.</li>
-                    <li>This chapter ties together Chapters 10, 11, 12 — expect "which property follows the same/opposite trend" MCQs.</li>
-                </ul>
-            </div>
+
             <h3>Master Summary: All Periodic Trends</h3>
             <table>
-                <thead><tr><th>Property</th><th>Across a Period (L→R)</th><th>Down a Group (Top→Bottom)</th></tr></thead>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Across a Period (L→R)</th>
+                        <th>Down a Group (Top→Bottom)</th>
+                    </tr>
+                </thead>
                 <tbody>
-                    <tr><td>Atomic Radius</td><td>Decreases</td><td>Increases</td></tr>
-                    <tr><td>Ionization Energy</td><td>Increases*</td><td>Decreases</td></tr>
-                    <tr><td>Electron Affinity (magnitude)</td><td>Increases*</td><td>Decreases*</td></tr>
-                    <tr><td>Electronegativity</td><td>Increases</td><td>Decreases</td></tr>
-                    <tr><td>Metallic Character</td><td>Decreases</td><td>Increases</td></tr>
-                    <tr><td>Effective Nuclear Charge</td><td>Increases</td><td>~Constant</td></tr>
+                    <tr>
+                        <td>Atomic Radius</td>
+                        <td>Decreases</td>
+                        <td>Increases</td>
+                    </tr>
+                    <tr>
+                        <td>Ionization Energy</td>
+                        <td>Increases*</td>
+                        <td>Decreases</td>
+                    </tr>
+                    <tr>
+                        <td>Electron Affinity (magnitude)</td>
+                        <td>Increases*</td>
+                        <td>Decreases*</td>
+                    </tr>
+                    <tr>
+                        <td>Electronegativity</td>
+                        <td>Increases</td>
+                        <td>Decreases</td>
+                    </tr>
+                    <tr>
+                        <td>Metallic Character</td>
+                        <td>Decreases</td>
+                        <td>Increases</td>
+                    </tr>
+                    <tr>
+                        <td>Effective Nuclear Charge (Zeff)</td>
+                        <td>Increases</td>
+                        <td>~Constant</td>
+                    </tr>
                 </tbody>
             </table>
+
+            <div class="quick-revision-box">
+                <h4>⚡ Quick Revision</h4>
+                <ul>
+                    <li>* = exceptions exist (see Chapter 11 for IE/EA exceptions: Be>B, N>O, Cl>F EA).</li>
+                    <li><strong>Cation always smaller, anion always larger</strong> than the respective parent atom — one of the most basic but most-tested facts.</li>
+                    <li>Isoelectronic trend: same electron count → <strong>more protons = smaller radius</strong>. Practice ordering series like N³⁻, O²⁻, F⁻, Na⁺, Mg²⁺, Al³⁺.</li>
+                    <li>This master table (Chapter 13) ties together Chapters 10, 11, and 12 — expect "which property follows the same/opposite trend as X" comparison questions.</li>
+                </ul>
+            </div>
         </section>
 
     </div>
 </main>
 
 <footer class="site-footer">
-    <p>&copy; 2026 Imoria Learning. All Rights Reserved. Made with ♥ by Iqra Javed</p>
+    <div class="footer-container">
+        <p>&copy; 2026 Imoria Learning. All Rights Reserved. Made with ♥ by Iqra Javed</p>
+    </div>
 </footer>
-
-<script src="main.js"></script>
 
 </body>
 </html>
