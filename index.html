@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imoria Learning | AFNS Chemistry Prep</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-container">
+        <a href="index.html" class="logo">
+            <svg class="logo-orbit" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="3" fill="#FF6B4A"/>
+                <ellipse cx="16" cy="16" rx="14" ry="6" stroke="#F7F4ED" stroke-width="1.5" fill="none" transform="rotate(30 16 16)"/>
+                <ellipse cx="16" cy="16" rx="14" ry="6" stroke="#F7F4ED" stroke-width="1.5" fill="none" transform="rotate(-30 16 16)" opacity="0.5"/>
+                <circle cx="28" cy="13" r="2" fill="#E8C547"/>
+            </svg>
+            <span class="logo-text">Imoria Learning</span>
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="chemistry-notes.html">Study Notes</a></li>
+                <li><a href="mcqs.html">Practice MCQs</a></li>
+                <li><a href="practice-test.html">Mock Test</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-orbits">
+            <svg viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="210" cy="210" r="8" fill="#FF6B4A"/>
+                <ellipse cx="210" cy="210" rx="100" ry="40" stroke="#FF6B4A" stroke-width="1" fill="none" transform="rotate(20 210 210)"/>
+                <ellipse cx="210" cy="210" rx="150" ry="60" stroke="#E8C547" stroke-width="1" fill="none" transform="rotate(-25 210 210)"/>
+                <ellipse cx="210" cy="210" rx="200" ry="85" stroke="#1F8A70" stroke-width="1" fill="none" transform="rotate(60 210 210)"/>
+                <circle cx="310" cy="180" r="4" fill="#E8C547"/>
+                <circle cx="60" cy="260" r="4" fill="#1F8A70"/>
+            </svg>
+        </div>
+        <div class="hero-container">
+            <span class="badge">AFNS Academic Prep · Atomic Structure</span>
+            <h1>Master Atomic Structure Chemistry for <span class="accent">AFNS</span></h1>
+            <p class="hero-subtitle">Comprehensive notes, chapter-wise MCQs, and a timed grand mock test covering all 13 core chapters of Atomic Structure & Periodic Trends — built for Armed Forces Nursing Services aspirants.</p>
+        </div>
+    </section>
+
+    <section class="cards-section">
+        <span class="section-eyebrow">Get Started</span>
+        <h2 class="section-title">Three ways to prepare</h2>
+        <div class="cards-grid">
+
+            <a href="chemistry-notes.html" class="dashboard-card">
+                <div class="card-icon-ring">📘</div>
+                <h2>Study Notes</h2>
+                <p>In-depth, exam-focused notes covering all 13 chapters — from electron discovery to periodic trends — with comparison tables and quick revision highlights.</p>
+                <span class="card-progress" id="card-notes-progress">Loading…</span>
+                <span class="card-link">Start Reading →</span>
+            </a>
+
+            <a href="mcqs.html" class="dashboard-card">
+                <div class="card-icon-ring">📝</div>
+                <h2>Practice MCQs</h2>
+                <p>Chapter-wise multiple choice questions designed to test your conceptual understanding, with instant feedback on every quiz.</p>
+                <span class="card-progress" id="card-mcq-progress">Loading…</span>
+                <span class="card-link">Start Practicing →</span>
+            </a>
+
+            <a href="practice-test.html" class="dashboard-card">
+                <div class="card-icon-ring">⏱️</div>
+                <h2>Grand Mock Test</h2>
+                <p>A 30-minute timed simulation with 50 questions spanning the entire syllabus. Get instant scoring and a pass/retain verdict.</p>
+                <span class="card-progress" id="card-mock-progress">Loading…</span>
+                <span class="card-link">Start Test →</span>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="progress-section">
+        <div class="progress-container">
+            <div class="atom-diagram-wrap">
+                <svg id="atom-diagram" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background tracks -->
+                    <circle cx="110" cy="110" r="50" fill="none" stroke="#EFE9DB" stroke-width="6"/>
+                    <circle cx="110" cy="110" r="75" fill="none" stroke="#EFE9DB" stroke-width="6"/>
+                    <circle cx="110" cy="110" r="100" fill="none" stroke="#EFE9DB" stroke-width="6"/>
+
+                    <!-- Progress rings (rotated so fill starts at top) -->
+                    <circle id="ring-1" cx="110" cy="110" r="50" fill="none" stroke="#FF6B4A" stroke-width="6"
+                        stroke-linecap="round" transform="rotate(-90 110 110)" stroke-dasharray="0" stroke-dashoffset="0"/>
+                    <circle id="ring-2" cx="110" cy="110" r="75" fill="none" stroke="#1F8A70" stroke-width="6"
+                        stroke-linecap="round" transform="rotate(-90 110 110)" stroke-dasharray="0" stroke-dashoffset="0"/>
+                    <circle id="ring-3" cx="110" cy="110" r="100" fill="none" stroke="#E8C547" stroke-width="6"
+                        stroke-linecap="round" transform="rotate(-90 110 110)" stroke-dasharray="0" stroke-dashoffset="0"/>
+
+                    <!-- Nucleus -->
+                    <circle cx="110" cy="110" r="22" fill="#0B1E3D"/>
+                </svg>
+                <div class="atom-center-label">
+                    <span class="pct" id="atom-overall-pct">0%</span>
+                    <span class="lbl">Overall Ready</span>
+                </div>
+            </div>
+
+            <div class="progress-stats">
+                <h2>Your preparation, tracked</h2>
+                <p>Progress is saved automatically on this device using your browser's local storage — no account needed. Inner ring = Notes, middle ring = MCQ chapters, outer ring = Mock Test best score.</p>
+                <div class="stat-rows">
+                    <div class="stat-row">
+                        <span class="stat-row-label">📘 Notes Read</span>
+                        <div class="stat-bar-track"><div class="stat-bar-fill" id="bar-notes"></div></div>
+                        <span class="stat-row-value" id="bar-notes-val">0/13</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-row-label">📝 MCQ Chapters</span>
+                        <div class="stat-bar-track"><div class="stat-bar-fill green" id="bar-quizzes"></div></div>
+                        <span class="stat-row-value" id="bar-quizzes-val">0/13</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-row-label">⏱️ Mock Test Best</span>
+                        <div class="stat-bar-track"><div class="stat-bar-fill gold" id="bar-mock"></div></div>
+                        <span class="stat-row-value" id="bar-mock-val">—</span>
+                    </div>
+                </div>
+                <button class="reset-progress-btn" onclick="resetAllProgress()">Reset all progress</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="info-container">
+            <span class="section-eyebrow">Why Imoria</span>
+            <h2 class="section-title">Built for the 95+ AFNS target</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>Complete Syllabus Coverage</h3>
+                    <p>All 13 chapters of Atomic Structure mapped directly to the AFNS chemistry syllabus, sourced from Punjab Board FSc Part-I textbooks (old and new editions).</p>
+                </div>
+                <div class="info-item">
+                    <h3>Exam-Oriented MCQs</h3>
+                    <p>260 questions crafted in the same style and difficulty level expected in AFNS entrance tests, including exception cases and trick distractors.</p>
+                </div>
+                <div class="info-item">
+                    <h3>Real Exam Simulation</h3>
+                    <p>Practice under timed conditions with our 50-question, 30-minute Grand Mock Test to build speed and accuracy.</p>
+                </div>
+                <div class="info-item">
+                    <h3>Progress That Sticks</h3>
+                    <p>Your reading progress, quiz scores, and mock test history are saved on your device — pick up exactly where you left off.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Imoria Learning. All Rights Reserved. Made with ♥ by Iqra Javed</p>
+</footer>
+
+<script src="main.js"></script>
+<script>
+    // Populate dashboard card progress text (after main.js init)
+    document.addEventListener('DOMContentLoaded', () => {
+        const read = JSON.parse(localStorage.getItem('imoria_read_chapters') || '[]');
+        const scores = JSON.parse(localStorage.getItem('imoria_quiz_scores') || '{}');
+        const mock = JSON.parse(localStorage.getItem('imoria_mock_history') || '[]');
+
+        document.getElementById('card-notes-progress').textContent = `${read.length}/13 chapters read`;
+
+        const quizCount = Object.keys(scores).length;
+        document.getElementById('card-mcq-progress').textContent = `${quizCount}/13 chapters attempted`;
+
+        if (mock.length > 0) {
+            const best = Math.max(...mock.map(m => m.percent));
+            document.getElementById('card-mock-progress').textContent = `Best: ${best}% (${mock.length} attempt${mock.length > 1 ? 's' : ''})`;
+        } else {
+            document.getElementById('card-mock-progress').textContent = 'Not attempted yet';
+        }
+    });
+</script>
+
+</body>
+</html>
