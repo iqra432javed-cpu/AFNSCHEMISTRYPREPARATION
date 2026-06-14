@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grand Mock Test | Imoria Learning</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-container">
+        <a href="index.html" class="logo">
+            <svg class="logo-orbit" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="3" fill="#FF6B4A"/>
+                <ellipse cx="16" cy="16" rx="14" ry="6" stroke="#F7F4ED" stroke-width="1.5" fill="none" transform="rotate(30 16 16)"/>
+                <ellipse cx="16" cy="16" rx="14" ry="6" stroke="#F7F4ED" stroke-width="1.5" fill="none" transform="rotate(-30 16 16)" opacity="0.5"/>
+                <circle cx="28" cy="13" r="2" fill="#E8C547"/>
+            </svg>
+            <span class="logo-text">Imoria Learning</span>
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chemistry-notes.html">Study Notes</a></li>
+                <li><a href="mcqs.html">Practice MCQs</a></li>
+                <li><a href="practice-test.html" class="active">Mock Test</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="test-layout">
+
+    <div id="test-intro" class="test-intro-panel">
+        <span class="section-eyebrow">AFNS Simulation</span>
+        <h1>Grand Mock Test</h1>
+        <p>50 questions · 30 minutes · All 13 chapters · Mixed difficulty</p>
+        <ul class="test-rules">
+            <li>Timer starts the moment you click <strong>Start Test</strong>.</li>
+            <li>You cannot pause the timer once started.</li>
+            <li>Answer all questions then click <strong>Submit Test</strong>.</li>
+            <li>Score ≥ 40/50 (80%) = <strong>PASS</strong>. Below 40 = <strong>Retain & Revise</strong>.</li>
+            <li>Your attempt history is saved automatically on this device.</li>
+        </ul>
+        <button id="start-btn" class="start-test-btn" onclick="startTest()">Start Test</button>
+
+        <div class="history-section">
+            <h3>Previous Attempts</h3>
+            <div class="history-list" id="mock-history-list">
+                <p class="history-empty">No attempts yet — your results will appear here.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="test-area" class="test-area" style="display:none;">
+        <div class="test-header-bar">
+            <span class="test-progress" id="progress-text">0 of 50 answered</span>
+            <span class="timer-display" id="timer-display">30:00</span>
+        </div>
+
+        <form id="mock-test-form">
+
+            <div class="question-block">
+                <p class="question-text">1. The e/m ratio of cathode rays is:</p>
+                <label class="option-label"><input type="radio" name="mq1" value="incorrect"> Different for every gas used in the tube</label>
+                <label class="option-label"><input type="radio" name="mq1" value="correct"> Constant regardless of the gas or electrode material</label>
+                <label class="option-label"><input type="radio" name="mq1" value="incorrect"> Equal to the e/m ratio of canal rays</label>
+                <label class="option-label"><input type="radio" name="mq1" value="incorrect"> Zero because electrons have no mass</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">2. Millikan's oil drop experiment determined:</p>
+                <label class="option-label"><input type="radio" name="mq2" value="incorrect"> The e/m ratio of the proton</label>
+                <label class="option-label"><input type="radio" name="mq2" value="incorrect"> The mass of the neutron</label>
+                <label class="option-label"><input type="radio" name="mq2" value="correct"> The charge on the electron (−1.6 × 10⁻¹⁹ C)</label>
+                <label class="option-label"><input type="radio" name="mq2" value="incorrect"> The radius of the atomic nucleus</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">3. The proton was named after identification as the lightest positive particle from which gas?</p>
+                <label class="option-label"><input type="radio" name="mq3" value="incorrect"> Helium</label>
+                <label class="option-label"><input type="radio" name="mq3" value="incorrect"> Oxygen</label>
+                <label class="option-label"><input type="radio" name="mq3" value="correct"> Hydrogen</label>
+                <label class="option-label"><input type="radio" name="mq3" value="incorrect"> Nitrogen</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">4. Which particle has a mass slightly GREATER than that of a proton?</p>
+                <label class="option-label"><input type="radio" name="mq4" value="incorrect"> Electron</label>
+                <label class="option-label"><input type="radio" name="mq4" value="incorrect"> Alpha particle</label>
+                <label class="option-label"><input type="radio" name="mq4" value="correct"> Neutron</label>
+                <label class="option-label"><input type="radio" name="mq4" value="incorrect"> Positron</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">5. In Chadwick's experiment, the radiation emitted was identified as neutrons because it:</p>
+                <label class="option-label"><input type="radio" name="mq5" value="incorrect"> Was deflected strongly by a magnetic field</label>
+                <label class="option-label"><input type="radio" name="mq5" value="correct"> Was highly penetrating, not deflected by fields, and knocked protons from paraffin wax</label>
+                <label class="option-label"><input type="radio" name="mq5" value="incorrect"> Produced visible fluorescence on a ZnS screen</label>
+                <label class="option-label"><input type="radio" name="mq5" value="incorrect"> Had the same e/m ratio as cathode rays</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">6. The property of cathode rays that proves they possess MASS is:</p>
+                <label class="option-label"><input type="radio" name="mq6" value="incorrect"> Causing fluorescence on a ZnS screen</label>
+                <label class="option-label"><input type="radio" name="mq6" value="incorrect"> Deflection toward the positive plate</label>
+                <label class="option-label"><input type="radio" name="mq6" value="correct"> Rotating a small paddle wheel placed in their path</label>
+                <label class="option-label"><input type="radio" name="mq6" value="incorrect"> Traveling in straight lines</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">7. In Rutherford's experiment, ~1 in 8000 alpha particles bounced back. This directly proved:</p>
+                <label class="option-label"><input type="radio" name="mq7" value="incorrect"> The atom is a solid sphere of positive charge</label>
+                <label class="option-label"><input type="radio" name="mq7" value="correct"> The nucleus is small, dense, and positively charged</label>
+                <label class="option-label"><input type="radio" name="mq7" value="incorrect"> Electrons repel alpha particles</label>
+                <label class="option-label"><input type="radio" name="mq7" value="incorrect"> The atom contains no neutral particles</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">8. The major defect of Rutherford's model that Bohr's third postulate directly resolves is:</p>
+                <label class="option-label"><input type="radio" name="mq8" value="incorrect"> Failure to explain the position of neutrons</label>
+                <label class="option-label"><input type="radio" name="mq8" value="correct"> Classical theory predicts an orbiting electron should radiate energy and spiral into the nucleus</label>
+                <label class="option-label"><input type="radio" name="mq8" value="incorrect"> The model could not predict atomic mass</label>
+                <label class="option-label"><input type="radio" name="mq8" value="incorrect"> The model did not account for isotopes</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">9. According to Bohr's model, the angular momentum of an electron in the nth orbit is:</p>
+                <label class="option-label"><input type="radio" name="mq9" value="incorrect"> mvr = h/2π</label>
+                <label class="option-label"><input type="radio" name="mq9" value="correct"> mvr = nh/2π</label>
+                <label class="option-label"><input type="radio" name="mq9" value="incorrect"> mvr = nhν</label>
+                <label class="option-label"><input type="radio" name="mq9" value="incorrect"> mvr = n²h</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">10. The energy of an electron in the n=3 orbit of a hydrogen atom is:</p>
+                <label class="option-label"><input type="radio" name="mq10" value="incorrect"> −13.6 eV</label>
+                <label class="option-label"><input type="radio" name="mq10" value="incorrect"> −3.4 eV</label>
+                <label class="option-label"><input type="radio" name="mq10" value="correct"> −1.51 eV</label>
+                <label class="option-label"><input type="radio" name="mq10" value="incorrect"> −0.85 eV</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">11. The Balmer series of hydrogen spectrum lines lies in which region?</p>
+                <label class="option-label"><input type="radio" name="mq11" value="incorrect"> Ultraviolet</label>
+                <label class="option-label"><input type="radio" name="mq11" value="correct"> Visible</label>
+                <label class="option-label"><input type="radio" name="mq11" value="incorrect"> Infrared</label>
+                <label class="option-label"><input type="radio" name="mq11" value="incorrect"> Microwave</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">12. Bohr's theory fails for multi-electron atoms because:</p>
+                <label class="option-label"><input type="radio" name="mq12" value="incorrect"> It uses circular orbits which are geometrically incorrect</label>
+                <label class="option-label"><input type="radio" name="mq12" value="correct"> It cannot account for electron-electron repulsions in multi-electron systems</label>
+                <label class="option-label"><input type="radio" name="mq12" value="incorrect"> It assumes electrons have no mass</label>
+                <label class="option-label"><input type="radio" name="mq12" value="incorrect"> It ignores the nucleus entirely</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">13. E = hc/λ implies that a photon with wavelength 200 nm has ________ energy than a photon with wavelength 600 nm.</p>
+                <label class="option-label"><input type="radio" name="mq13" value="correct"> Higher (shorter λ = higher E)</label>
+                <label class="option-label"><input type="radio" name="mq13" value="incorrect"> Lower (shorter λ = lower E)</label>
+                <label class="option-label"><input type="radio" name="mq13" value="incorrect"> Equal energy regardless of wavelength</label>
+                <label class="option-label"><input type="radio" name="mq13" value="incorrect"> Three times lower energy</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">14. Planck's constant (h) has units of:</p>
+                <label class="option-label"><input type="radio" name="mq14" value="incorrect"> J/s</label>
+                <label class="option-label"><input type="radio" name="mq14" value="correct"> J·s</label>
+                <label class="option-label"><input type="radio" name="mq14" value="incorrect"> J·m</label>
+                <label class="option-label"><input type="radio" name="mq14" value="incorrect"> kg·m/s</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">15. X-rays are produced when:</p>
+                <label class="option-label"><input type="radio" name="mq15" value="incorrect"> Canal rays strike a glass surface</label>
+                <label class="option-label"><input type="radio" name="mq15" value="correct"> High-speed electrons (cathode rays) strike a heavy metal target</label>
+                <label class="option-label"><input type="radio" name="mq15" value="incorrect"> Alpha particles bombard beryllium</label>
+                <label class="option-label"><input type="radio" name="mq15" value="incorrect"> Neutrons interact with protons in the nucleus</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">16. Moseley's Law √ν = a(Z − b) established that the correct basis for ordering elements is:</p>
+                <label class="option-label"><input type="radio" name="mq16" value="incorrect"> Atomic mass</label>
+                <label class="option-label"><input type="radio" name="mq16" value="correct"> Atomic number (Z)</label>
+                <label class="option-label"><input type="radio" name="mq16" value="incorrect"> Number of neutrons</label>
+                <label class="option-label"><input type="radio" name="mq16" value="incorrect"> Electron configuration alone</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">17. For n=3, the possible values of the azimuthal quantum number l are:</p>
+                <label class="option-label"><input type="radio" name="mq17" value="incorrect"> 0 only</label>
+                <label class="option-label"><input type="radio" name="mq17" value="incorrect"> 0 and 1</label>
+                <label class="option-label"><input type="radio" name="mq17" value="correct"> 0, 1, and 2</label>
+                <label class="option-label"><input type="radio" name="mq17" value="incorrect"> 0, 1, 2, and 3</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">18. The maximum number of electrons in the shell n=4 is:</p>
+                <label class="option-label"><input type="radio" name="mq18" value="incorrect"> 8</label>
+                <label class="option-label"><input type="radio" name="mq18" value="incorrect"> 18</label>
+                <label class="option-label"><input type="radio" name="mq18" value="correct"> 32</label>
+                <label class="option-label"><input type="radio" name="mq18" value="incorrect"> 50</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">19. The quantum number that describes the ORIENTATION of an orbital in space is:</p>
+                <label class="option-label"><input type="radio" name="mq19" value="incorrect"> n</label>
+                <label class="option-label"><input type="radio" name="mq19" value="incorrect"> l</label>
+                <label class="option-label"><input type="radio" name="mq19" value="correct"> m (magnetic quantum number)</label>
+                <label class="option-label"><input type="radio" name="mq19" value="incorrect"> s (spin quantum number)</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">20. Which quantum number set is IMPOSSIBLE?</p>
+                <label class="option-label"><input type="radio" name="mq20" value="incorrect"> n=3, l=2, m=−2, s=+½</label>
+                <label class="option-label"><input type="radio" name="mq20" value="correct"> n=2, l=2, m=0, s=−½ (l cannot equal n)</label>
+                <label class="option-label"><input type="radio" name="mq20" value="incorrect"> n=4, l=3, m=+3, s=+½</label>
+                <label class="option-label"><input type="radio" name="mq20" value="incorrect"> n=1, l=0, m=0, s=−½</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">21. The Aufbau principle states electrons fill into orbitals in order of:</p>
+                <label class="option-label"><input type="radio" name="mq21" value="incorrect"> Decreasing principal quantum number</label>
+                <label class="option-label"><input type="radio" name="mq21" value="correct"> Increasing orbital energy (lowest energy first)</label>
+                <label class="option-label"><input type="radio" name="mq21" value="incorrect"> Alphabetical subshell order</label>
+                <label class="option-label"><input type="radio" name="mq21" value="incorrect"> Decreasing atomic radius</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">22. According to the (n+l) rule, 4s fills before 3d because:</p>
+                <label class="option-label"><input type="radio" name="mq22" value="correct"> 4s has n+l = 4, while 3d has n+l = 5 (lower sum fills first)</label>
+                <label class="option-label"><input type="radio" name="mq22" value="incorrect"> 4 > 3 so the fourth shell always fills before the third</label>
+                <label class="option-label"><input type="radio" name="mq22" value="incorrect"> s orbitals always fill before d orbitals regardless of n</label>
+                <label class="option-label"><input type="radio" name="mq22" value="incorrect"> 3d is not a real subshell in light elements</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">23. The actual electronic configuration of Cr (Z=24) is [Ar] 3d⁵ 4s¹ instead of [Ar] 3d⁴ 4s² because:</p>
+                <label class="option-label"><input type="radio" name="mq23" value="incorrect"> The Aufbau principle does not apply to transition metals</label>
+                <label class="option-label"><input type="radio" name="mq23" value="correct"> A half-filled d⁵ configuration has extra stability from symmetry and exchange energy</label>
+                <label class="option-label"><input type="radio" name="mq23" value="incorrect"> 3d orbitals are lower in energy than 4s for all transition metals</label>
+                <label class="option-label"><input type="radio" name="mq23" value="incorrect"> Chromium has an odd atomic number requiring a half-filled d</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">24. When Fe (Z=26) forms Fe²⁺, which electrons are removed first?</p>
+                <label class="option-label"><input type="radio" name="mq24" value="incorrect"> 3d electrons</label>
+                <label class="option-label"><input type="radio" name="mq24" value="correct"> 4s electrons</label>
+                <label class="option-label"><input type="radio" name="mq24" value="incorrect"> 3p electrons</label>
+                <label class="option-label"><input type="radio" name="mq24" value="incorrect"> The two highest-energy 3d electrons</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">25. Hund's Rule requires that electrons in degenerate orbitals:</p>
+                <label class="option-label"><input type="radio" name="mq25" value="incorrect"> Pair up immediately in the lowest-m orbital</label>
+                <label class="option-label"><input type="radio" name="mq25" value="correct"> Occupy separate orbitals singly with parallel spins before any pairing occurs</label>
+                <label class="option-label"><input type="radio" name="mq25" value="incorrect"> Always alternate spin direction orbital by orbital</label>
+                <label class="option-label"><input type="radio" name="mq25" value="incorrect"> Fill from highest m to lowest m</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">26. The Modern Periodic Law is based on the work of:</p>
+                <label class="option-label"><input type="radio" name="mq26" value="incorrect"> Mendeleev (atomic mass ordering)</label>
+                <label class="option-label"><input type="radio" name="mq26" value="correct"> Moseley (atomic number as the fundamental property)</label>
+                <label class="option-label"><input type="radio" name="mq26" value="incorrect"> Bohr (energy levels)</label>
+                <label class="option-label"><input type="radio" name="mq26" value="incorrect"> Thomson (electron discovery)</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">27. The effective nuclear charge (Zeff) is given by:</p>
+                <label class="option-label"><input type="radio" name="mq27" value="incorrect"> Zeff = Z + S</label>
+                <label class="option-label"><input type="radio" name="mq27" value="correct"> Zeff = Z − S</label>
+                <label class="option-label"><input type="radio" name="mq27" value="incorrect"> Zeff = Z × S</label>
+                <label class="option-label"><input type="radio" name="mq27" value="incorrect"> Zeff = S − Z</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">28. Across Period 3, shielding stays ~constant while Z increases. The net effect is that Zeff:</p>
+                <label class="option-label"><input type="radio" name="mq28" value="correct"> Increases, making atomic size decrease and ionization energy increase</label>
+                <label class="option-label"><input type="radio" name="mq28" value="incorrect"> Decreases, making atomic size increase</label>
+                <label class="option-label"><input type="radio" name="mq28" value="incorrect"> Stays constant so no periodic trends appear</label>
+                <label class="option-label"><input type="radio" name="mq28" value="incorrect"> Decreases then increases mid-period</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">29. Why is IE(Be) > IE(B) even though B has a higher atomic number?</p>
+                <label class="option-label"><input type="radio" name="mq29" value="incorrect"> Be has more neutrons that stabilize the nucleus</label>
+                <label class="option-label"><input type="radio" name="mq29" value="correct"> Be has a stable fully-filled 2s²; B loses a higher-energy 2p electron which is easier to remove</label>
+                <label class="option-label"><input type="radio" name="mq29" value="incorrect"> B is larger than Be making its electrons easier to lose</label>
+                <label class="option-label"><input type="radio" name="mq29" value="incorrect"> This is not a real exception; IE(B) is always greater than IE(Be)</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">30. Why is IE(N) > IE(O)?</p>
+                <label class="option-label"><input type="radio" name="mq30" value="incorrect"> N has more protons than O</label>
+                <label class="option-label"><input type="radio" name="mq30" value="correct"> N has an extra-stable half-filled 2p³; in O, one paired 2p⁴ electron is easier to remove due to repulsion</label>
+                <label class="option-label"><input type="radio" name="mq30" value="incorrect"> O has a larger atomic radius than N</label>
+                <label class="option-label"><input type="radio" name="mq30" value="incorrect"> This exception applies only in the gas phase</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">31. The electron affinity of Cl is MORE negative than that of F because:</p>
+                <label class="option-label"><input type="radio" name="mq31" value="incorrect"> Cl has lower electronegativity than F</label>
+                <label class="option-label"><input type="radio" name="mq31" value="correct"> F's very small 2p orbitals create high electron-electron repulsion when a new electron is added</label>
+                <label class="option-label"><input type="radio" name="mq31" value="incorrect"> Cl has a higher nuclear charge than F</label>
+                <label class="option-label"><input type="radio" name="mq31" value="incorrect"> F does not accept electrons at all</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">32. The most electronegative element on the Pauling scale is:</p>
+                <label class="option-label"><input type="radio" name="mq32" value="incorrect"> Oxygen (3.5)</label>
+                <label class="option-label"><input type="radio" name="mq32" value="incorrect"> Chlorine (3.0)</label>
+                <label class="option-label"><input type="radio" name="mq32" value="correct"> Fluorine (4.0)</label>
+                <label class="option-label"><input type="radio" name="mq32" value="incorrect"> Nitrogen (3.0)</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">33. Metallic character increases down a group because:</p>
+                <label class="option-label"><input type="radio" name="mq33" value="incorrect"> More protons make it easier to lose electrons</label>
+                <label class="option-label"><input type="radio" name="mq33" value="correct"> Increased atomic size and shielding lower ionization energy, making electron loss easier</label>
+                <label class="option-label"><input type="radio" name="mq33" value="incorrect"> Electronegativity increases down a group</label>
+                <label class="option-label"><input type="radio" name="mq33" value="incorrect"> More neutrons stabilize the atom against electron loss</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">34. Atomic radius decreases across a period because:</p>
+                <label class="option-label"><input type="radio" name="mq34" value="incorrect"> New electron shells are added</label>
+                <label class="option-label"><input type="radio" name="mq34" value="correct"> Increasing Zeff (constant shielding, increasing Z) pulls the electron cloud closer to the nucleus</label>
+                <label class="option-label"><input type="radio" name="mq34" value="incorrect"> Electrons are removed from outer shells</label>
+                <label class="option-label"><input type="radio" name="mq34" value="incorrect"> Neutrons compress the nucleus</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">35. A cation is always ________ its parent neutral atom.</p>
+                <label class="option-label"><input type="radio" name="mq35" value="incorrect"> Larger than</label>
+                <label class="option-label"><input type="radio" name="mq35" value="correct"> Smaller than</label>
+                <label class="option-label"><input type="radio" name="mq35" value="incorrect"> The same size as</label>
+                <label class="option-label"><input type="radio" name="mq35" value="incorrect"> Larger than if it is a transition metal</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">36. Among the isoelectronic series O²⁻, F⁻, Na⁺, Mg²⁺ (all 10 electrons), which has the SMALLEST radius?</p>
+                <label class="option-label"><input type="radio" name="mq36" value="incorrect"> O²⁻ (Z=8)</label>
+                <label class="option-label"><input type="radio" name="mq36" value="incorrect"> F⁻ (Z=9)</label>
+                <label class="option-label"><input type="radio" name="mq36" value="incorrect"> Na⁺ (Z=11)</label>
+                <label class="option-label"><input type="radio" name="mq36" value="correct"> Mg²⁺ (Z=12, highest nuclear charge pulls electrons most tightly)</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">37. The Lyman series corresponds to transitions ending at n=1, placing it in the:</p>
+                <label class="option-label"><input type="radio" name="mq37" value="correct"> Ultraviolet region</label>
+                <label class="option-label"><input type="radio" name="mq37" value="incorrect"> Visible region</label>
+                <label class="option-label"><input type="radio" name="mq37" value="incorrect"> Infrared region</label>
+                <label class="option-label"><input type="radio" name="mq37" value="incorrect"> Microwave region</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">38. The number of orbitals in a d subshell (l=2) is:</p>
+                <label class="option-label"><input type="radio" name="mq38" value="incorrect"> 3</label>
+                <label class="option-label"><input type="radio" name="mq38" value="correct"> 5</label>
+                <label class="option-label"><input type="radio" name="mq38" value="incorrect"> 7</label>
+                <label class="option-label"><input type="radio" name="mq38" value="incorrect"> 10</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">39. The canal rays' e/m ratio is different for different gases because:</p>
+                <label class="option-label"><input type="radio" name="mq39" value="incorrect"> Canal rays are electromagnetic waves not affected by charge</label>
+                <label class="option-label"><input type="radio" name="mq39" value="correct"> Canal rays are positive ions of the gas used; heavier gas atoms produce heavier ions with smaller e/m</label>
+                <label class="option-label"><input type="radio" name="mq39" value="incorrect"> The anode material changes the charge on canal rays</label>
+                <label class="option-label"><input type="radio" name="mq39" value="incorrect"> The discharge voltage affects only canal rays</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">40. Pauli's Exclusion Principle states that no two electrons in an atom can have:</p>
+                <label class="option-label"><input type="radio" name="mq40" value="incorrect"> The same spin quantum number</label>
+                <label class="option-label"><input type="radio" name="mq40" value="incorrect"> The same principal quantum number</label>
+                <label class="option-label"><input type="radio" name="mq40" value="correct"> An identical set of all four quantum numbers</label>
+                <label class="option-label"><input type="radio" name="mq40" value="incorrect"> The same magnetic quantum number</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">41. X-rays are NOT deflected by electric or magnetic fields because they are:</p>
+                <label class="option-label"><input type="radio" name="mq41" value="incorrect"> Too massive to be deflected</label>
+                <label class="option-label"><input type="radio" name="mq41" value="incorrect"> Positively charged radiation</label>
+                <label class="option-label"><input type="radio" name="mq41" value="correct"> Neutral electromagnetic radiation with no charge</label>
+                <label class="option-label"><input type="radio" name="mq41" value="incorrect"> Moving at speeds slower than light</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">42. The electronic configuration of Cu (Z=29) is [Ar] 3d¹⁰ 4s¹ rather than [Ar] 3d⁹ 4s² because:</p>
+                <label class="option-label"><input type="radio" name="mq42" value="incorrect"> The Aufbau principle does not apply at Z=29</label>
+                <label class="option-label"><input type="radio" name="mq42" value="correct"> A completely filled d¹⁰ subshell has extra stability from symmetry and exchange energy</label>
+                <label class="option-label"><input type="radio" name="mq42" value="incorrect"> The 4s orbital is always emptied before 3d in copper</label>
+                <label class="option-label"><input type="radio" name="mq42" value="incorrect"> Copper has an even atomic number forcing d¹⁰</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">43. For hydrogen, rₙ = 0.529 × n² Å. For n=3, the radius is:</p>
+                <label class="option-label"><input type="radio" name="mq43" value="incorrect"> 0.529 Å</label>
+                <label class="option-label"><input type="radio" name="mq43" value="incorrect"> 1.058 Å</label>
+                <label class="option-label"><input type="radio" name="mq43" value="correct"> 4.761 Å</label>
+                <label class="option-label"><input type="radio" name="mq43" value="incorrect"> 2.116 Å</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">44. The energy required to completely remove an electron from hydrogen in the ground state (n=1) is:</p>
+                <label class="option-label"><input type="radio" name="mq44" value="incorrect"> 3.4 eV</label>
+                <label class="option-label"><input type="radio" name="mq44" value="correct"> 13.6 eV</label>
+                <label class="option-label"><input type="radio" name="mq44" value="incorrect"> 1.51 eV</label>
+                <label class="option-label"><input type="radio" name="mq44" value="incorrect"> 0.85 eV</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">45. The Period 3 IE exceptions analogous to Be>B and N>O in Period 2 are:</p>
+                <label class="option-label"><input type="radio" name="mq45" value="incorrect"> Na>Mg and Si>P</label>
+                <label class="option-label"><input type="radio" name="mq45" value="correct"> Mg>Al and P>S</label>
+                <label class="option-label"><input type="radio" name="mq45" value="incorrect"> Al>Si and S>Cl</label>
+                <label class="option-label"><input type="radio" name="mq45" value="incorrect"> Si>Al and Cl>S</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">46. An element has IE₁=496, IE₂=4562, IE₃=6910 kJ/mol. The large jump between IE₁ and IE₂ indicates:</p>
+                <label class="option-label"><input type="radio" name="mq46" value="correct"> 1 valence electron (Group 1 element — the next electron is removed from an inner shell)</label>
+                <label class="option-label"><input type="radio" name="mq46" value="incorrect"> 2 valence electrons</label>
+                <label class="option-label"><input type="radio" name="mq46" value="incorrect"> 3 valence electrons</label>
+                <label class="option-label"><input type="radio" name="mq46" value="incorrect"> 7 valence electrons</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">47. Which correctly ranks atomic radii in DECREASING order across Period 2?</p>
+                <label class="option-label"><input type="radio" name="mq47" value="incorrect"> F > O > N > C</label>
+                <label class="option-label"><input type="radio" name="mq47" value="incorrect"> C > N > F > O</label>
+                <label class="option-label"><input type="radio" name="mq47" value="correct"> C > N > O > F (radius decreases across Period 2 left to right)</label>
+                <label class="option-label"><input type="radio" name="mq47" value="incorrect"> N > C > O > F</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">48. Among the isoelectronic series N³⁻, O²⁻, F⁻, Na⁺, Mg²⁺, Al³⁺ (all 10 electrons), which has the LARGEST radius?</p>
+                <label class="option-label"><input type="radio" name="mq48" value="correct"> N³⁻ (Z=7, lowest nuclear charge)</label>
+                <label class="option-label"><input type="radio" name="mq48" value="incorrect"> F⁻ (Z=9)</label>
+                <label class="option-label"><input type="radio" name="mq48" value="incorrect"> Na⁺ (Z=11)</label>
+                <label class="option-label"><input type="radio" name="mq48" value="incorrect"> Al³⁺ (Z=13, highest nuclear charge)</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">49. The shielding constant (S) in Zeff = Z − S represents:</p>
+                <label class="option-label"><input type="radio" name="mq49" value="incorrect"> The number of valence electrons</label>
+                <label class="option-label"><input type="radio" name="mq49" value="correct"> The extent to which inner-shell electrons reduce the nuclear charge felt by valence electrons</label>
+                <label class="option-label"><input type="radio" name="mq49" value="incorrect"> The total number of protons minus neutrons</label>
+                <label class="option-label"><input type="radio" name="mq49" value="incorrect"> The spin quantum number averaged over all electrons</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question-text">50. Which statement BEST summarizes the master periodic trend connecting all four properties?</p>
+                <label class="option-label"><input type="radio" name="mq50" value="incorrect"> All four properties increase across a period and decrease down a group</label>
+                <label class="option-label"><input type="radio" name="mq50" value="incorrect"> All four properties decrease across a period and increase down a group</label>
+                <label class="option-label"><input type="radio" name="mq50" value="correct"> Across a period, Zeff increases → radius & metallic character decrease while IE & EN increase; down a group, shielding increases → radius & metallic character increase while IE & EN decrease</label>
+                <label class="option-label"><input type="radio" name="mq50" value="incorrect"> These four properties are unrelated and follow independent random trends</label>
+            </div>
+
+            <button type="button" class="submit-test-btn" onclick="submitTest()">Submit Test</button>
+        </form>
+    </div>
+
+    <div id="result-panel" class="result-panel" style="display:none;">
+        <h2 id="result-title"></h2>
+        <div class="score-display">
+            <span id="score-value"></span>
+            <span class="score-label">out of 50</span>
+        </div>
+        <p id="result-percentage"></p>
+        <p id="result-verdict" class="verdict-text"></p>
+        <div id="result-breakdown" class="result-breakdown"></div>
+        <div class="result-actions">
+            <button onclick="restartTest()" class="restart-btn">Try Again</button>
+            <a href="mcqs.html" class="secondary-btn">Review Chapter MCQs</a>
+        </div>
+    </div>
+
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Imoria Learning. All Rights Reserved. Made with ♥ by Iqra Javed</p>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
